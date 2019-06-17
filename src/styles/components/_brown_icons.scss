@@ -1,0 +1,430 @@
+
+/* start Brown icons font */
+@font-face {
+  font-family: "brown-icons";
+  src: url("fonts/brownicons/brown-icons.eot");
+  src: url("fonts/brownicons/brown-icons.eot?#iefix") format("embedded-opentype"),
+  url("fonts/brownicons/brown-icons.woff") format("woff"),
+  url("fonts/brownicons/brown-icons.ttf") format("truetype"),
+  url("fonts/brownicons/brown-icons.svg#brown-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]::before {
+  font-family: "brown-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="i-"]::before,
+[class*=" i-"]::before {
+  font-family: "brown-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.i-instagram::before {
+  content: "\30"; }
+
+.i-split::before {
+  content: "\35"; }
+
+.i-videocamera::before {
+  content: "\29"; }
+
+.i-group-2::before {
+  content: "\3b"; }
+
+.i-apple::before {
+  content: "\3e"; }
+
+.i-snapchat::before {
+  content: "\3f"; }
+
+.i-vimeo::before {
+  content: "\40"; }
+
+.i-map::before {
+  content: "\5b"; }
+
+.i-location::before {
+  content: "\5f"; }
+
+.i-atsign::before {
+  content: "\7c"; }
+
+.i-drupal::before {
+  content: "\e005"; }
+
+.i-wheelchair::before {
+  content: "\e006"; }
+
+.i-graduation::before {
+  content: "\e007"; }
+
+.i-youtube::before {
+  content: "\e008"; }
+
+.i-longarrow-left::before {
+  content: "\e009"; }
+
+.i-longarrow-right-1::before {
+  content: "\e00a"; }
+
+.i-document-full::before {
+  content: "\e00c"; }
+
+.i-outbound-link-full::before {
+  content: "\e00d"; }
+
+.i-arrow-up-circled::before {
+  content: "\e00e"; }
+
+.i-arrow-down-circled::before {
+  content: "\e00f"; }
+
+.i-triangled-right-circled::before {
+  content: "\e010"; }
+
+.i-calendar::before {
+  content: "\e011"; }
+
+.i-documents::before {
+  content: "\e016"; }
+
+.i-document-lines::before {
+  content: "\e017"; }
+
+.i-linkedin::before {
+  content: "\e019"; }
+
+.i-google-plus::before {
+  content: "\e01a"; }
+
+.i-facebook::before {
+  content: "\e01b"; }
+
+.i-outbound-link-line::before {
+  content: "\e01c"; }
+
+.i-folder-open::before {
+  content: "\e01d"; }
+
+.i-arrow-up::before {
+  content: "\e01e"; }
+
+.i-arrow-down::before {
+  content: "\e01f"; }
+
+.i-plus::before {
+  content: "\e020"; }
+
+.i-minus::before {
+  content: "\e021"; }
+
+.i-arrow-left::before {
+  content: "\e024"; }
+
+.i-arrow-right::before {
+  content: "\e025"; }
+
+.i-direction::before {
+  content: "\e026"; }
+
+.i-camera::before {
+  content: "\e027"; }
+
+.i-email-line-1::before {
+  content: "\e028"; }
+
+.i-search::before {
+  content: "\e029"; }
+
+.i-bullet::before {
+  content: "\e02e"; }
+
+.i-menu::before {
+  content: "\e02f"; }
+
+.i-carrot-right::before {
+  content: "\e004"; }
+
+.i-folder-open-line::before {
+  content: "\7d"; }
+
+.i-folder-closed-line::before {
+  content: "\e00b"; }
+
+.i-arrow-left-circled::before {
+  content: "\61"; }
+
+.i-arrow-right-circled::before {
+  content: "\62"; }
+
+.i-twitter::before {
+  content: "\64"; }
+
+.i-diagram::before {
+  content: "\65"; }
+
+.i-file-code::before {
+  content: "\63"; }
+
+.i-file-excel::before {
+  content: "\69"; }
+
+.i-file-image::before {
+  content: "\6a"; }
+
+.i-file::before {
+  content: "\6b"; }
+
+.i-file-pdf::before {
+  content: "\6c"; }
+
+.i-file-powerpoint::before {
+  content: "\6d"; }
+
+.i-file-text::before {
+  content: "\6e"; }
+
+.i-file-text-line::before {
+  content: "\70"; }
+
+.i-file-video::before {
+  content: "\71"; }
+
+.i-file-word::before {
+  content: "\72"; }
+
+.i-mobile::before {
+  content: "\68"; }
+
+.i-cog::before {
+  content: "\73"; }
+
+.i-alert-circled::before {
+  content: "\6f"; }
+
+.i-check-starburst::before {
+  content: "\74"; }
+
+.i-carrot-right-circled::before {
+  content: "\75"; }
+
+.i-carrot-up-circled::before {
+  content: "\76"; }
+
+.i-carrot-down-circled::before {
+  content: "\77"; }
+
+.i-bike::before {
+  content: "\79"; }
+
+.i-auto::before {
+  content: "\42"; }
+
+.i-devices::before {
+  content: "\43"; }
+
+.i-mobile-1::before {
+  content: "\44"; }
+
+.i-arrow-down-line::before {
+  content: "\46"; }
+
+.i-arrow-left-line::before {
+  content: "\47"; }
+
+.i-arrow-right-line::before {
+  content: "\48"; }
+
+.i-arrow-up-line::before {
+  content: "\49"; }
+
+.i-clock::before {
+  content: "\4a"; }
+
+.i-closed-circled-full::before {
+  content: "\4b"; }
+
+.i-closed-circle-line::before {
+  content: "\4d"; }
+
+.i-chatboxes-line::before {
+  content: "\4e"; }
+
+.i-chatbox-line::before {
+  content: "\4f"; }
+
+.i-chatbox-full::before {
+  content: "\50"; }
+
+.i-email-line-2::before {
+  content: "\51"; }
+
+.i-email-full-2::before {
+  content: "\52"; }
+
+.i-folder-drive::before {
+  content: "\53"; }
+
+.i-destination::before {
+  content: "\54"; }
+
+.i-phone::before {
+  content: "\55"; }
+
+.i-triangle-right-circled-full::before {
+  content: "\56"; }
+
+.i-plus-circled-full::before {
+  content: "\57"; }
+
+.i-triangle-right-circled-line::before {
+  content: "\58"; }
+
+.i-plus-circled-line::before {
+  content: "\59"; }
+
+.i-email-full-1::before {
+  content: "\5a"; }
+
+.i-link-out::before {
+  content: "\31"; }
+
+.i-minus-circled-full::before {
+  content: "\32"; }
+
+.i-minus-circled-line::before {
+  content: "\34"; }
+
+.i-file-full::before {
+  content: "\36"; }
+
+.i-check-circled-full::before {
+  content: "\37"; }
+
+.i-check-circled-line::before {
+  content: "\38"; }
+
+.i-home::before {
+  content: "\45"; }
+
+.i-info::before {
+  content: "\21"; }
+
+.i-desktop::before {
+  content: "\22"; }
+
+.i-global::before {
+  content: "\26"; }
+
+.i-fax::before {
+  content: "\66"; }
+
+.i-arrow-down-2::before {
+  content: "\41"; }
+
+.i-arrow-line-down::before {
+  content: "\4c"; }
+
+.i-arrow-left-1::before {
+  content: "\33"; }
+
+.i-arrow-right-1::before {
+  content: "\23"; }
+
+.i-arrow-up-1::before {
+  content: "\24"; }
+
+.i-comment-o::before {
+  content: "\7a"; }
+
+.i-long-arrow-down::before {
+  content: "\78"; }
+
+.i-link::before {
+  content: "\25"; }
+
+.i-carrot-right-2::before {
+  content: "\27"; }
+
+.i-mouse-large::before {
+  content: "\28"; }
+
+.i-mouse-small::before {
+  content: "\2a"; }
+
+.i-lightbulb-1::before {
+  content: "\2b"; }
+
+.i-lightbulb-2::before {
+  content: "\2c"; }
+
+.i-plus-1::before {
+  content: "\2d"; }
+
+.i-minus-1::before {
+  content: "\2e"; }
+
+.i-minus-2::before {
+  content: "\2f"; }
+
+.i-plus-3::before {
+  content: "\3a"; }
+
+.i-minus-3::before {
+  content: "\3c"; }
+
+.i-plus-2::before {
+  content: "\3d"; }
+
+.i-accessible::before {
+  content: "\5d"; }
+
+.i-paintbucket::before {
+  content: "\5e"; }
+
+.i-image::before {
+  content: "\60"; }
+
+.i-alert::before {
+  content: "\39"; }
+
+.i-search-plus::before {
+  content: "\7e"; }
+
+.i-sign-lines::before {
+  content: "\5c"; }
+
+.i-destination-lines::before {
+  content: "\e000"; }
+
+.i-person-lines::before {
+  content: "\e001"; }
+
+.i-graduation-lines::before {
+  content: "\7b"; }
+
+.i-tag::before {
+  content: "\e002"; }
+
+.i-home-full::before {
+  content: "\e003"; }
+
+.i-flickr::before {
+  content: "\e012"; }
+
+/* end Brown icons font */
