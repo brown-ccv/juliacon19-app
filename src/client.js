@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import fetch from 'isomorphic-fetch';
 
-const SERVICE_ENDPOINT = 'https://bcbi.brown.edu/YOUR_API';
+const SERVICE_ENDPOINT = 'https:/datasci.brown.edu/YOUR_API';
 
 class Client {
 
@@ -17,7 +17,7 @@ class Client {
     }
 
     if (!response.ok) {
-      throw new Error(`BCBIService getConcepts failed, HTTP status ${response.status}`);
+      throw new Error(`CCVService getConcepts failed, HTTP status ${response.status}`);
     }
     const data = await response.json();
 

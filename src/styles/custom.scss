@@ -3,9 +3,11 @@
 
 // Import Bootstrap
 @import '~bootstrap/scss/bootstrap.scss';
+@import "~brown-university-styles/dist/styles.css";
 
 // Import Custom Components
 @import 'components/_navbar';
 @import 'components/_brown_fonts';
 @import 'components/_brown_icons';
 @import 'components/_brown_footer';
+@import 'components/_app'

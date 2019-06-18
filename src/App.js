@@ -13,9 +13,9 @@ class App extends Component {
     console.log(`${process.env.PUBLIC_URL}`);
     return (
       <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
+      <Navbar />
         <div className="App">
           <div className="topContent">
-            <Navbar />
             <div className="main-content">
               <Route path="/about" component={AboutPage} />
               <Route exact path="/" component={ContentPage} />

@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main-content {
+  padding: 2vw 3vw;
+}
