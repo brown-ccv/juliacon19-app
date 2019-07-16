@@ -11,7 +11,9 @@
     "react-brownccv": "git+https://github.com/brown-ccv/react-brownccv.git#feat-babel",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "react-spinners": "^0.5.4"
+    "vega": "^5.4.0",
+    "vega-embed": "^4.2.1",
+    "vega-lite": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Spinner from './Spinner';
+import ScheduleViz from './ScheduleViz';
 
 export default class ContentPage extends Component {
   render(){
@@ -8,9 +8,7 @@ export default class ContentPage extends Component {
       <div>
         <p>I am your app</p>
 
-        <p>I am loading forever</p>
-
-        <Spinner loading={true} className="spinner" size={100} />
+        <ScheduleViz />
       </div>
     );
   }
