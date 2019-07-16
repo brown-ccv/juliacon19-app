@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   display: flex;
   min-height: 90vh;
   flex-direction: column;
@@ -13,6 +12,7 @@ body {
 }
 
 .main-content {
+  text-align: center;
   padding: 2vw 3vw;
 }
 
