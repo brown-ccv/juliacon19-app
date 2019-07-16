@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import vegaEmbed from 'vega-embed';
+import * as vega from 'vega';
 import spec from '../vega/schedule';
 import { getWordCloudHover } from '../reducer';
 
@@ -16,6 +17,11 @@ export class ScheduleViz extends Component {
   }
 
   componentDidMount() {
+
+
+    spec.signals.push({"name": "hoverIDs", "value": []})
+    spec.marks[4].marks[0].encode.update.fillOpacity.unshift({"test": "indexof(hoverIDs, datum.index) >= 0", "value": 1.0})
+
     console.log(spec);
 
     vegaEmbed('#schedule', spec, { "mode": "vega", "actions": false, "renderer": "svg"})
@@ -34,10 +40,6 @@ export class ScheduleViz extends Component {
                     this.props.setHover(null)
                   }
                 })
-                view.addSignalListener("paintbrush", (name, value) => {
-                  console.log("PAINTBRUSH ", value)
-                  view.signal("paintbrush", [4])
-                })
               })
         } catch(error) {
           console.log("OH NO - The Schedule Viz Broke!")
@@ -47,9 +49,9 @@ export class ScheduleViz extends Component {
   }
 
   componentDidUpdate() {
-    console.log("wcHover ", this.props.wcHover)
+    var update = this.props.wcHover ? this.props.wcHover : []
     this.view
-      .signal("paintbrush", this.props.wcHover)
+      .signal("hoverIDs", update)
       .run()
 
   }

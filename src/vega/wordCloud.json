@@ -1,6 +1,6 @@
 {
-  "height": 400,
-  "padding": 0,
+  "height": 350,
+  "padding": 10,
   "marks": [
     {
       "encode": {
@@ -25,7 +25,7 @@
           "padding": 2,
           "fontSizeRange": [12, 56],
           "font": "Helvetica Neue, Arial",
-          "size": [800, 400],
+          "size": [{"signal": "width"}, {"signal": "height"}],
           "text": {"field": "text"},
           "type": "wordcloud",
           "fontSize": {"field": "datum.count"}
@@ -2191,6 +2191,6 @@
       "type": "log"
     }
   ],
-  "width": 800,
+  "width": 900,
   "signals": [{"name": "hoverID", "value": 0}]
 }
