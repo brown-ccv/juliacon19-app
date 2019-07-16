@@ -3,6 +3,7 @@
   "autosize": "pad",
   "padding": 5,
   "data": [
+    {"name": "paintbrush_store"},
     {
       "name": "source_0",
       "values": [
@@ -1165,6 +1166,7 @@
           "as": "day_datetime",
           "expr": "datetime(2006, 0, day(datum[\"datetime\"])+1, 0, 0, 0, 0)"
         },
+        {"type": "identifier", "as": "_vgsid_"},
         {
           "type": "formula",
           "as": "yearmonthdatehoursminutes_datetime",
@@ -1189,7 +1191,15 @@
   ],
   "signals": [
     {"name": "child_width", "value": 300},
-    {"name": "child_height", "value": 300}
+    {"name": "child_height", "value": 300},
+    {
+      "name": "unit",
+      "value": {},
+      "on": [
+        {"events": "mousemove", "update": "isTuple(group()) ? group() : unit"}
+      ]
+    },
+    {"name": "paintbrush", "update": "vlSelectionResolve(\"paintbrush_store\")"}
   ],
   "layout": {
     "padding": 20,
@@ -1277,6 +1287,54 @@
           "height": {"signal": "child_height"}
         }
       },
+      "signals": [
+        {
+          "name": "facet",
+          "value": {},
+          "on": [
+            {
+              "events": [{"source": "scope", "type": "mousemove"}],
+              "update": "isTuple(facet) ? facet : group(\"cell\").datum"
+            }
+          ]
+        },
+        {
+          "name": "paintbrush_tuple",
+          "on": [
+            {
+              "events": [{"source": "scope", "type": "mouseover"}],
+              "update": "datum && item().mark.marktype !== 'group' ? {unit: \"child\" + '__facet_column_' + (facet[\"day_datetime\"]), fields: paintbrush_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"_vgsid_\"]]} : null",
+              "force": true
+            },
+            {
+              "events": [{"source": "scope", "type": "dblclick"}],
+              "update": "null"
+            }
+          ]
+        },
+        {
+          "name": "paintbrush_tuple_fields",
+          "value": [{"type": "E", "field": "_vgsid_"}]
+        },
+        {
+          "name": "paintbrush_toggle",
+          "value": false,
+          "on": [
+            {
+              "events": [{"source": "scope", "type": "mouseover"}],
+              "update": "event.shiftKey"
+            },
+            {
+              "events": [{"source": "scope", "type": "dblclick"}],
+              "update": "false"
+            }
+          ]
+        },
+        {
+          "name": "paintbrush_modify",
+          "update": "modify(\"paintbrush_store\", paintbrush_toggle ? null : paintbrush_tuple, paintbrush_toggle ? null : true, paintbrush_toggle ? paintbrush_tuple : null)"
+        }
+      ],
       "marks": [
         {
           "name": "child_marks",
@@ -1286,8 +1344,14 @@
           "encode": {
             "update": {
               "opacity": {"value": 0.7},
-              "fill": {"value": "transparent"},
-              "stroke": {"scale": "color", "field": "duration"},
+              "fill": {"scale": "color", "field": "duration"},
+              "fillOpacity": [
+                {
+                  "test": "(vlSelectionTest(\"paintbrush_store\", datum))",
+                  "value": 1
+                },
+                {"value": 0.5}
+              ],
               "tooltip": {
                 "signal": "{\"title\": ''+datum[\"title\"], \"Room\": ''+datum[\"location\"], \"Date & Time\": timeFormat(datum[\"yearmonthdatehoursminutes_datetime\"], '%b %d, %Y %H:%M')}"
               },

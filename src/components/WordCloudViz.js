@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import vegaEmbed from 'vega-embed';
-import spec from '../vega/schedule';
-import { getWordCloudHover } from '../reducer';
+import spec from '../vega/wordCloud';
+import { getScheduleHover } from '../reducer';
 
-export class ScheduleViz extends Component {
+export class WordCloudViz extends Component {
 
   constructor(props) {
     super(props);
+
     this.view = null;
   }
 
@@ -18,59 +19,55 @@ export class ScheduleViz extends Component {
   componentDidMount() {
     console.log(spec);
 
-    vegaEmbed('#schedule', spec, { "mode": "vega", "actions": false, "renderer": "svg"})
-      .then((res) => {
+    vegaEmbed('#wordcloud', spec, { "mode": "vega", "actions": false, "renderer": "svg"})
+      .then( (res)  => {
         try {
           res.view
             .runAsync()
               .then( (view) => {
-                this.updateView(view)
                 console.log(view)
+                this.updateView(view)
                 // update the global state with the current mouseover
                 view.addEventListener("mouseover", (name, value) => {
-                  if (value && value.datum.index) {
-                    this.props.setHover(value.datum.index)
+                  if (value && value.datum.talks) {
+                    this.props.setHover(value.datum.talks)
                   } else {
                     this.props.setHover(null)
                   }
                 })
-                view.addSignalListener("paintbrush", (name, value) => {
-                  console.log("PAINTBRUSH ", value)
-                  view.signal("paintbrush", [4])
-                })
               })
         } catch(error) {
-          console.log("OH NO - The Schedule Viz Broke!")
+          console.log("OH NO - The Word Cloud Viz Broke!")
           console.log(error)
         }
       })
   }
 
   componentDidUpdate() {
-    console.log("wcHover ", this.props.wcHover)
+    console.log("schedHover ", this.props.schedHover)
     this.view
-      .signal("paintbrush", this.props.wcHover)
+      .signal("hoverID", this.props.schedHover)
       .run()
 
   }
 
   render() {
     return(
-      <div id="schedule"></div>
+      <div id="wordcloud"></div>
     )
   }
 }
 
 const mapStateToProps = state => {
   return {
-    wcHover: getWordCloudHover(state)
+    schedHover: getScheduleHover(state)
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    setHover: id => dispatch({type: 'CHANGE_SCHEDULE_HOVER', data: id})
+    setHover: id => dispatch({type: 'CHANGE_WORD_CLOUD_HOVER', data: id})
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ScheduleViz);
+export default connect(mapStateToProps, mapDispatchToProps)(WordCloudViz);
