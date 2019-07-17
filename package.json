@@ -2,9 +2,11 @@
   "name": "juliacon19-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://brown-ccv.github.io/juliacon19-app",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "brown-university-styles": "git+https://bitbucket.brown.edu/scm/react/brown-university-styles.git",
+    "gh-pages": "^2.0.1",
     "lodash": "^4.17.11",
     "npm-check-updates": "^3.1.11",
     "react": "^16.8.6",
@@ -19,6 +21,8 @@
     "vega-lite": "^3.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

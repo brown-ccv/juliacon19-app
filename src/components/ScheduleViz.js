@@ -24,7 +24,7 @@ export class ScheduleViz extends Component {
 
     console.log(spec);
 
-    vegaEmbed('#schedule', spec, { "mode": "vega", "actions": false, "renderer": "svg"})
+    vegaEmbed('#schedule', spec, { "mode": "vega", "actions": false, "renderer": "svg", "loader": { "target": "_blank" } })
       .then((res) => {
         try {
           res.view

@@ -85,7 +85,7 @@
             116
           ]
         },
-        {"count": 20, "text": "neural ode", "talks": [61, 100]},
+        {"count": 40, "text": "neural ode", "talks": [61, 100]},
         {
           "count": 25,
           "text": "complex",
@@ -121,9 +121,9 @@
           "text": "parallel",
           "talks": [14, 21, 23, 27, 32, 33, 60, 86, 93, 114]
         },
-        {"count": 10, "text": "recommender system", "talks": [6, 51]},
+        {"count": 20, "text": "recommender system", "talks": [6, 51]},
         {
-          "count": 22,
+          "count": 44,
           "text": "multiple dispatch",
           "talks": [11, 39, 44, 49, 78, 102, 106]
         },
@@ -198,7 +198,7 @@
             83
           ]
         },
-        {"count": 12, "text": "stochastic dual dynamic", "talks": [63]},
+        {"count": 36, "text": "stochastic dual dynamic", "talks": [63]},
         {
           "count": 20,
           "text": "environment",
@@ -243,8 +243,8 @@
             109
           ]
         },
-        {"count": 12, "text": "package environment", "talks": [92]},
-        {"count": 9, "text": "factor graph based", "talks": [52]},
+        {"count": 24, "text": "package environment", "talks": [92]},
+        {"count": 27, "text": "factor graph based", "talks": [52]},
         {
           "count": 21,
           "text": "solve",
@@ -357,13 +357,13 @@
           ]
         },
         {
-          "count": 20,
+          "count": 40,
           "text": "programming language",
           "talks": [1, 7, 31, 32, 46, 50, 57, 64, 66, 71, 81, 106, 112]
         },
-        {"count": 18, "text": "federal reserve bank", "talks": [21, 44]},
-        {"count": 9, "text": "differential equation machine", "talks": [74]},
-        {"count": 12, "text": "monte carlo iteration", "talks": [14]},
+        {"count": 54, "text": "federal reserve bank", "talks": [21, 44]},
+        {"count": 27, "text": "differential equation machine", "talks": [74]},
+        {"count": 36, "text": "monte carlo iteration", "talks": [14]},
         {
           "count": 41,
           "text": "based",
@@ -435,7 +435,7 @@
             106
           ]
         },
-        {"count": 10, "text": "command literal", "talks": [50]},
+        {"count": 20, "text": "command literal", "talks": [50]},
         {
           "count": 19,
           "text": "efficient",
@@ -501,16 +501,16 @@
             106
           ]
         },
-        {"count": 14, "text": "tensor network", "talks": [3]},
-        {"count": 18, "text": "monte carlo", "talks": [7, 14, 21, 57, 69]},
+        {"count": 28, "text": "tensor network", "talks": [3]},
+        {"count": 36, "text": "monte carlo", "talks": [7, 14, 21, 57, 69]},
         {"count": 26, "text": "quantum", "talks": [11, 45, 98, 113]},
         {
           "count": 21,
           "text": "set",
           "talks": [7, 14, 24, 25, 33, 36, 39, 67, 72, 92, 95, 103, 109]
         },
-        {"count": 10, "text": "data type", "talks": [38, 49, 59, 95]},
-        {"count": 12, "text": "dual dynamic programming", "talks": [63]},
+        {"count": 20, "text": "data type", "talks": [38, 49, 59, 95]},
+        {"count": 36, "text": "dual dynamic programming", "talks": [63]},
         {"count": 23, "text": "cell", "talks": [14, 33, 87, 97]},
         {
           "count": 26,
@@ -736,8 +736,8 @@
           ]
         },
         {"count": 19, "text": "space", "talks": [7, 14, 33, 45, 75, 77, 86]},
-        {"count": 12, "text": "thread based parallelism", "talks": [124, 125]},
-        {"count": 12, "text": "machine learning model", "talks": [28, 38, 74]},
+        {"count": 36, "text": "thread based parallelism", "talks": [124, 125]},
+        {"count": 36, "text": "machine learning model", "talks": [28, 38, 74]},
         {
           "count": 62,
           "text": "system",
@@ -791,7 +791,7 @@
           ]
         },
         {
-          "count": 15,
+          "count": 45,
           "text": "differential equation solver",
           "talks": [61, 73, 75, 89]
         },
@@ -854,7 +854,7 @@
           ]
         },
         {
-          "count": 10,
+          "count": 20,
           "text": "computer science",
           "talks": [103, 112, 113, 115]
         },
@@ -864,7 +864,7 @@
           "talks": [5, 11, 20, 24, 28, 52, 71, 87, 107, 109, 112, 113, 114, 122]
         },
         {
-          "count": 12,
+          "count": 36,
           "text": "neural ordinary differential",
           "talks": [61, 100]
         },
@@ -898,9 +898,9 @@
           "text": "community",
           "talks": [8, 12, 19, 27, 30, 52, 75, 82, 99, 104, 107, 123]
         },
-        {"count": 9, "text": "deploying web server", "talks": [85]},
+        {"count": 27, "text": "deploying web server", "talks": [85]},
         {
-          "count": 24,
+          "count": 48,
           "text": "scientific computing",
           "talks": [26, 45, 51, 65, 83, 86, 99, 115]
         },
@@ -936,9 +936,9 @@
             114
           ]
         },
-        {"count": 12, "text": "probabilistic programming system", "talks": [7]},
+        {"count": 36, "text": "probabilistic programming system", "talks": [7]},
         {
-          "count": 38,
+          "count": 76,
           "text": "machine learning",
           "talks": [6, 28, 35, 36, 38, 49, 53, 61, 72, 74, 86, 87, 89, 111, 115]
         },
@@ -971,13 +971,13 @@
             115
           ]
         },
-        {"count": 12, "text": "chain monte carlo", "talks": [7, 14, 57, 69]},
+        {"count": 36, "text": "chain monte carlo", "talks": [7, 14, 57, 69]},
         {
           "count": 17,
           "text": "change",
           "talks": [14, 15, 77, 79, 84, 90, 91, 96, 100, 105, 106]
         },
-        {"count": 10, "text": "deep learning", "talks": [7, 37, 41, 74]},
+        {"count": 20, "text": "deep learning", "talks": [7, 37, 41, 74]},
         {
           "count": 18,
           "text": "run",
@@ -1010,7 +1010,7 @@
             116
           ]
         },
-        {"count": 12, "text": "data science", "talks": [1, 9, 34, 38, 42, 108]},
+        {"count": 24, "text": "data science", "talks": [1, 9, 34, 38, 42, 108]},
         {
           "count": 25,
           "text": "library",
@@ -1038,7 +1038,7 @@
           "text": "specific",
           "talks": [11, 27, 45, 49, 59, 65, 73, 74, 77, 81, 97, 102, 109]
         },
-        {"count": 12, "text": "markov chain monte", "talks": [7, 14, 57, 69]},
+        {"count": 36, "text": "markov chain monte", "talks": [7, 14, 57, 69]},
         {
           "count": 17,
           "text": "term",
@@ -1079,7 +1079,7 @@
           ]
         },
         {
-          "count": 10,
+          "count": 20,
           "text": "software development",
           "talks": [52, 71, 107, 112]
         },
@@ -1141,8 +1141,8 @@
           "text": "written",
           "talks": [7, 9, 13, 31, 32, 36, 38, 43, 48, 51, 65, 66, 82, 87, 105]
         },
-        {"count": 10, "text": "trajectory optimization", "talks": [31, 43]},
-        {"count": 10, "text": "literate programming", "talks": [91]},
+        {"count": 20, "text": "trajectory optimization", "talks": [31, 43]},
+        {"count": 20, "text": "literate programming", "talks": [91]},
         {
           "count": 109,
           "text": "package",
@@ -1199,7 +1199,7 @@
           "text": "idea",
           "talks": [11, 13, 24, 28, 41, 51, 58, 63, 65, 71, 86, 90]
         },
-        {"count": 9, "text": "time series data", "talks": [7, 49]},
+        {"count": 27, "text": "time series data", "talks": [7, 49]},
         {
           "count": 19,
           "text": "scale",
@@ -1263,7 +1263,7 @@
           "talks": [3, 7, 11, 21, 28, 36, 38, 43, 48, 49, 52, 59, 86, 104, 105]
         },
         {
-          "count": 27,
+          "count": 81,
           "text": "ordinary differential equation",
           "talks": [25, 61, 62, 73, 100]
         },
@@ -1305,8 +1305,8 @@
             110
           ]
         },
-        {"count": 10, "text": "missing value", "talks": [46, 49]},
-        {"count": 9, "text": "discuss lessons learned", "talks": [19, 21]},
+        {"count": 20, "text": "missing value", "talks": [46, 49]},
+        {"count": 27, "text": "discuss lessons learned", "talks": [19, 21]},
         {
           "count": 46,
           "text": "function",
@@ -1342,29 +1342,29 @@
           "text": "parallelism",
           "talks": [16, 26, 27, 75, 86, 124, 125]
         },
-        {"count": 12, "text": "bank york federal", "talks": [21, 44]},
+        {"count": 36, "text": "bank york federal", "talks": [21, 44]},
         {
-          "count": 30,
+          "count": 60,
           "text": "differential equation",
           "talks": [25, 28, 60, 61, 62, 73, 74, 75, 89, 97, 100, 103]
         },
-        {"count": 9, "text": "minority class instance", "talks": [72]},
+        {"count": 27, "text": "minority class instance", "talks": [72]},
         {
           "count": 17,
           "text": "information",
           "talks": [13, 17, 21, 31, 40, 49, 54, 55, 64, 72, 74, 109, 111, 117]
         },
         {
-          "count": 10,
+          "count": 20,
           "text": "probabilistic programming",
           "talks": [7, 41, 46, 57, 65, 66]
         },
         {
-          "count": 9,
+          "count": 27,
           "text": "dynamic stochastic equilibrium",
           "talks": [21, 44]
         },
-        {"count": 10, "text": "diversity inclusion", "talks": [30, 64]},
+        {"count": 20, "text": "diversity inclusion", "talks": [30, 64]},
         {
           "count": 21,
           "text": "inference",
@@ -1396,9 +1396,9 @@
             112
           ]
         },
-        {"count": 9, "text": "equation machine learning", "talks": [74]},
+        {"count": 27, "text": "equation machine learning", "talks": [74]},
         {
-          "count": 18,
+          "count": 54,
           "text": "probabilistic programming language",
           "talks": [7, 46, 57, 66]
         },
@@ -1481,13 +1481,13 @@
             107
           ]
         },
-        {"count": 12, "text": "york federal reserve", "talks": [21, 44]},
+        {"count": 36, "text": "york federal reserve", "talks": [21, 44]},
         {
-          "count": 9,
+          "count": 27,
           "text": "partial differential equation",
           "talks": [60, 74, 89]
         },
-        {"count": 14, "text": "package manager", "talks": [77, 92]},
+        {"count": 28, "text": "package manager", "talks": [77, 92]},
         {
           "count": 22,
           "text": "easy",
@@ -1518,9 +1518,9 @@
             106
           ]
         },
-        {"count": 9, "text": "ms mib mib", "talks": [55]},
+        {"count": 27, "text": "ms mib mib", "talks": [55]},
         {
-          "count": 18,
+          "count": 36,
           "text": "data structure",
           "talks": [27, 33, 34, 54, 65, 105, 106]
         },
@@ -1570,11 +1570,11 @@
           "talks": [9, 14, 21, 35, 49, 51, 55, 61, 65, 67, 85, 86, 90, 92, 109]
         },
         {
-          "count": 28,
+          "count": 56,
           "text": "neural network",
           "talks": [7, 37, 61, 74, 75, 89, 98, 100]
         },
-        {"count": 10, "text": "ha model", "talks": [44]},
+        {"count": 20, "text": "ha model", "talks": [44]},
         {
           "count": 28,
           "text": "computation",
@@ -1622,9 +1622,9 @@
           "talks": [7, 45, 51, 56, 61, 68, 69, 86, 89, 98, 103]
         },
         {"count": 17, "text": "ml", "talks": [23, 28, 36, 49, 88]},
-        {"count": 10, "text": "code snippets", "talks": [2, 67, 91]},
-        {"count": 12, "text": "dynamic programming sddp", "talks": [63]},
-        {"count": 16, "text": "source file", "talks": [91, 105]},
+        {"count": 20, "text": "code snippets", "talks": [2, 67, 91]},
+        {"count": 36, "text": "dynamic programming sddp", "talks": [63]},
+        {"count": 32, "text": "source file", "talks": [91, 105]},
         {
           "count": 78,
           "text": "algorithm",
@@ -1731,7 +1731,7 @@
           "text": "power",
           "talks": [14, 28, 47, 63, 69, 74, 77, 81, 97, 109]
         },
-        {"count": 12, "text": "sampling approach", "talks": [72]},
+        {"count": 24, "text": "sampling approach", "talks": [72]},
         {
           "count": 19,
           "text": "distributed",
@@ -1742,7 +1742,7 @@
           "text": "solving",
           "talks": [25, 35, 44, 47, 60, 61, 62, 63, 65, 74, 81, 99, 111]
         },
-        {"count": 12, "text": "federal reserve system", "talks": [21, 44]},
+        {"count": 36, "text": "federal reserve system", "talks": [21, 44]},
         {"count": 16, "text": "aircraft", "talks": [15, 97]},
         {
           "count": 32,
@@ -1848,8 +1848,8 @@
             114
           ]
         },
-        {"count": 18, "text": "reserve bank york", "talks": [21, 44]},
-        {"count": 18, "text": "type system", "talks": [45, 48, 101, 106, 112]},
+        {"count": 54, "text": "reserve bank york", "talks": [21, 44]},
+        {"count": 36, "text": "type system", "talks": [45, 48, 101, 106, 112]},
         {
           "count": 24,
           "text": "type",
