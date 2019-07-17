@@ -40,6 +40,10 @@ export class ScheduleViz extends Component {
                     this.props.setHover(null)
                   }
                 })
+
+                view.addEventListener("mouseout", (name, value) => {
+                  this.props.setHover(null)
+                })
               })
         } catch(error) {
           console.log("OH NO - The Schedule Viz Broke!")

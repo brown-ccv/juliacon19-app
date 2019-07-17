@@ -44,7 +44,6 @@ export class WordCloudViz extends Component {
   }
 
   componentDidUpdate() {
-    console.log("schedHover ", this.props.schedHover)
     this.view
       .signal("hoverID", this.props.schedHover)
       .run()

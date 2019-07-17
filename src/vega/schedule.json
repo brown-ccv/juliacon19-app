@@ -1456,7 +1456,7 @@
   ],
   "signals": [
     {"name": "child_width", "value": 300},
-    {"name": "child_height", "value": 250},
+    {"name": "child_height", "value": 200},
     {
       "name": "unit",
       "value": {},
@@ -1608,14 +1608,14 @@
           "from": {"data": "facet"},
           "encode": {
             "update": {
-              "opacity": {"value": 0.7},
+              "opacity": {"value": 1},
               "fill": {"scale": "color", "field": "duration"},
               "fillOpacity": [
                 {
                   "test": "(vlSelectionTest(\"paintbrush_store\", datum))",
                   "value": 1
                 },
-                {"value": 0.5}
+                {"value": 0.4}
               ],
               "tooltip": {
                 "signal": "{\"title\": ''+datum[\"title\"], \"Room\": ''+datum[\"location\"], \"Date & Time\": timeFormat(datum[\"yearmonthdatehoursminutes_datetime\"], '%b %d, %Y %H:%M')}"
