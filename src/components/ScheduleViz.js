@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import vegaEmbed from 'vega-embed';
-import * as vega from 'vega';
 import spec from '../vega/schedule';
 import { getWordCloudHover } from '../reducer';
 
@@ -20,7 +19,7 @@ export class ScheduleViz extends Component {
 
 
     spec.signals.push({"name": "hoverIDs", "value": []})
-    spec.marks[4].marks[0].encode.update.fillOpacity.unshift({"test": "indexof(hoverIDs, datum.index) >= 0", "value": 1.0})
+    spec.marks[3].marks[0].encode.update.fillOpacity.unshift({"test": "indexof(hoverIDs, datum.index) >= 0", "value": 1.0})
 
     console.log(spec);
 

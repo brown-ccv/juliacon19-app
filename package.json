@@ -2,7 +2,6 @@
   "name": "juliacon19-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://brown-ccv.github.io/juliacon19-app",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "brown-university-styles": "git+https://bitbucket.brown.edu/scm/react/brown-university-styles.git",
