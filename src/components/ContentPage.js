@@ -7,7 +7,7 @@ export default class ContentPage extends Component {
 
     return(
       <div>
-        <h1>What's Everyone Talking about at JuliaCon?</h1>
+        <h1>What's Everyone Talking About at JuliaCon?</h1>
 
         <p>JuliaCon 2019 talks by time and location, or topic - hover over a point or word to explore!</p>
 
