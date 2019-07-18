@@ -1,32 +1,69 @@
-vl"""{
+spec = vl"""{
+  "height": 150,
+  "width": 300,
   "data": {
-    "name": "source"
+    "vaues": []
   },
-  "mark": "point",
+  "selection": {
+    "paintbrush": {
+      "type": "multi",
+      "on": "mouseover", "empty": "none"
+    }
+  },
+  "mark": {
+      "type": "rect",
+      "filled": true,
+      "opacity": 1.0,
+      "strokeWidth": 1,
+      "stroke": "white"
+  },
   "encoding": {
-    "x": {
-      "timeUnit": "hours",
+    "column": {
       "field": "start_datetime",
+      "title": null,
+      "type": "ordinal",
+      "timeUnit": "day"
+    },
+    "x": {
+      "field": "start_datetime",
+      "title": null,
       "type": "temporal",
-      "scale": {}
+      "timeUnit": "hoursminutes",
+      "axis": {
+        "orient": "bottom"
+      }
+    },
+    "x2": {
+    "field": "end_datetime",
+      "title": null,
+      "type": "temporal",
+      "timeUnit": "hoursminutes"
     },
     "y": {
       "field": "location",
-      "type": "nominal"
+      "title": null,
+      "type": "nominal",
+      "scale": { "type": "band", "paddingInner": 0.5 }
     },
-    "column": {
-      "timeUnit": "day",
-      "field": "start_datetime",
-      "type": "temporal"
-    },
-    "size": {
-      "field": "duration",
-      "type": "quantitative"
-    },
+    "href": { "field": "url" },
     "color": {
       "field": "duration",
-      "type": "quantitative"
-    }
+      "type": "nominal",
+      "legend": null
+    },
+    "fillOpacity": {
+      "condition": {
+        "selection": "paintbrush", "value": 1.0
+      },
+      "value": 0.4
+    },
+    "tooltip": [
+      {"field": "title", "type": "nominal"},
+      {"field": "speaker", "title": "Speaker", "type": "nominal"},
+      {"field": "location", "title": "Location", "type": "nominal"},
+      {"field": "start_datetime", "title": "Date & Time", "type": "temporal", "timeUnit": "yearmonthdatehoursminutes"},
+      {"field": "duration", "title": "Duration (min)", "type": "quantitative"}
+    ]
   },
   "config": {
     "overlay": {
@@ -34,6 +71,17 @@ vl"""{
     },
     "scale": {
       "useUnaggregatedDomain": true
+    },
+    "axis": {
+      "gridOpacity": 0,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "header": {
+      "labelFontSize": 15
+    },
+    "view": {
+      "strokeOpacity": 0
     }
   }
 }"""(data)
