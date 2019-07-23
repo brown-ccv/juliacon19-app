@@ -17,7 +17,7 @@ export class WordCloudViz extends Component {
   }
 
   componentDidMount() {
-    console.log(spec);
+    // console.log(spec);
 
     vegaEmbed('#wordcloud', spec, { "mode": "vega", "actions": false, "renderer": "svg"})
       .then( (res)  => {
@@ -25,7 +25,7 @@ export class WordCloudViz extends Component {
           res.view
             .runAsync()
               .then( (view) => {
-                console.log(view)
+                // console.log(view)
                 this.updateView(view)
                 // update the global state with the current mouseover
                 view.addEventListener("mouseover", (name, value) => {

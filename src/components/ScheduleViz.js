@@ -21,7 +21,7 @@ export class ScheduleViz extends Component {
     spec.signals.push({"name": "hoverIDs", "value": []})
     spec.marks[3].marks[0].encode.update.fillOpacity.unshift({"test": "indexof(hoverIDs, datum.index) >= 0", "value": 1.0})
 
-    console.log(spec);
+    // console.log(spec);
 
     vegaEmbed('#schedule', spec, { "mode": "vega", "actions": false, "renderer": "svg", "loader": { "target": "_blank" } })
       .then((res) => {
@@ -30,7 +30,7 @@ export class ScheduleViz extends Component {
             .runAsync()
               .then( (view) => {
                 this.updateView(view)
-                console.log(view)
+                // console.log(view)
                 // update the global state with the current mouseover
                 view.addEventListener("mouseover", (name, value) => {
                   if (value && value.datum.index) {

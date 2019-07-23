@@ -10,7 +10,6 @@ COPY . /app
 RUN npm run build
 
 # production environment
-FROM build
 RUN npm install -g serve
 EXPOSE 5000
 CMD ["serve", "-s", "./build"]

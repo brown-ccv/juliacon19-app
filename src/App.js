@@ -7,8 +7,6 @@ import ContentPage from './components/ContentPage';
 
 class App extends Component {
   render() {
-    console.log("Public URL");
-    console.log(`${process.env.PUBLIC_URL}`);
     return (
       <div className="App">
         <Navbar />
