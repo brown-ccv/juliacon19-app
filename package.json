@@ -15,7 +15,7 @@
     "react-scripts": "3.0.1",
     "redux": "^4.0.4",
     "seamless-immutable": "^7.1.4",
-    "vega": "^5.4.0",
+    "vega": "^5.17.3",
     "vega-embed": "^4.2.1",
     "vega-lite": "^3.3.0"
   },
